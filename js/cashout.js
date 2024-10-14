@@ -10,8 +10,7 @@ document.getElementById('btn-cash-out').addEventListener('click', function(event
 
         const previousBalance = document.getElementById('account-balance').innerText;
         const precashConvert = parseFloat(previousBalance);
-
-        const resultCashOut = cashInputConvert - precashConvert;
+        const resultCashOut = precashConvert - cashInputConvert;
         const cashOutUpdate = document.getElementById('account-balance').innerText = resultCashOut;
     }
     else{
